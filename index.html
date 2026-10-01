@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DUAFE | Salón de Belleza</title>
 
-    <!-- La hoja externa permite separar la estructura HTML del diseño visual -->
-  <link rel="stylesheet" href="css/estilos.css"> 
+    <!-- El CSS externo permite separar la estructura HTML del diseño visual -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-    <!-- El header identifica el negocio y presenta su navegación principal -->
+    <!-- El header presenta la identidad principal y el nombre del negocio -->
     <header>
-        <img src="img/logo-duafe.png" alt="Logo del salón de belleza DUAFE">
+
+        <img src="img/logo-duafe.png.jpeg" alt="Logo del salón de belleza DUAFE">
 
         <h1>DUAFE</h1>
 
         <p>Salón de belleza y cuidado del cabello</p>
 
-        <!-- El nav contiene los enlaces principales para recorrer la página -->
+        <!-- El nav reúne los enlaces principales para navegar por la página -->
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#servicios">Servicios</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
         </nav>
+
     </header>
 
-    <!-- Main reúne el contenido principal del salón en una sola área -->
+    <!-- El main contiene todo el contenido principal del salón -->
     <main>
 
-        <!-- Esta section presenta el salón y sirve como introducción -->
+        <!-- Esta section presenta el salón y explica brevemente sus servicios -->
         <section id="inicio">
+
             <h2>Bienvenidas a DUAFE</h2>
 
             <p>
@@ -49,14 +52,16 @@
             </p>
 
             <figure>
-                <img src="img/salon-duafe.jpg"
-                    alt="Espacio del salón de belleza DUAFE">
-                <figcaption>Espacio de atención del salón de belleza DUAFE.</figcaption>
+                <img src="img/peinado-duafe.jpg.jpeg"
+                    alt="Peinado realizado en el salón de belleza DUAFE">
+                <figcaption>Uno de los estilos de peinado realizados en DUAFE.</figcaption>
             </figure>
+
         </section>
 
-        <!-- Esta section agrupa los servicios que ofrece el negocio -->
+        <!-- Esta section agrupa los diferentes servicios que ofrece el negocio -->
         <section id="servicios">
+
             <h2>Nuestros servicios</h2>
 
             <p>
@@ -71,8 +76,9 @@
                 <li>Trenzas pegadas</li>
             </ul>
 
-            <!-- Este article describe un servicio que puede entenderse por sí mismo -->
+            <!-- El article describe un servicio que puede comprenderse por sí mismo -->
             <article>
+
                 <h3>Trenzas con kanekalon</h3>
 
                 <p>
@@ -85,17 +91,20 @@
                     En DUAFE trabajamos diferentes diseños de trenzas buscando
                     que cada cliente encuentre un estilo que se adapte a sus gustos.
                 </p>
+
             </article>
 
             <figure>
-                <img src="img/trenzas-kanekalon.jpg"
+                <img src="img/trenzas-kanekalon.jpg.jpeg"
                     alt="Trenzas con kanekalon realizadas en DUAFE">
                 <figcaption>Trenzas con kanekalon.</figcaption>
             </figure>
+
         </section>
 
-        <!-- Esta section explica el propósito del salón y su servicio -->
+        <!-- Esta section explica la identidad del salón y orienta sobre la elección del estilo -->
         <section id="nosotros">
+
             <h2>Sobre DUAFE</h2>
 
             <p>
@@ -120,14 +129,16 @@
             </ol>
 
             <figure>
-                <img src="img/peinado-duafe.jpg"
-                    alt="Peinado realizado en el salón de belleza DUAFE">
-                <figcaption>Uno de los estilos de peinado realizados en DUAFE.</figcaption>
+                <img src="img/extensiones-duafe.jpg.jpeg"
+                    alt="Montura de extensiones realizada en DUAFE">
+                <figcaption>Montura de extensiones realizada en el salón.</figcaption>
             </figure>
+
         </section>
 
-        <!-- Esta sección presenta información secundaria relacionada con el salón -->
+        <!-- El aside contiene información secundaria relacionada con el salón -->
         <aside>
+
             <h2>Información del salón</h2>
 
             <p>
@@ -139,13 +150,16 @@
                 <strong>Atención:</strong> los servicios se realizan mediante
                 disponibilidad y programación previa.
             </p>
+
         </aside>
 
-        <!-- Esta section contiene datos organizados sobre los servicios -->
+        <!-- Esta section organiza los servicios del salón en una tabla -->
         <section id="precios">
+
             <h2>Servicios de DUAFE</h2>
 
             <table>
+
                 <caption>Servicios disponibles en el salón</caption>
 
                 <thead>
@@ -156,6 +170,7 @@
                 </thead>
 
                 <tbody>
+
                     <tr>
                         <td>Peinados</td>
                         <td>Diseños de peinados para diferentes ocasiones.</td>
@@ -168,19 +183,23 @@
 
                     <tr>
                         <td>Montura de extensiones</td>
-                        <td>Colocación de extensiones para cambiar o complementar el estilo.</td>
+                        <td>Colocación de extensiones para complementar el estilo.</td>
                     </tr>
 
                     <tr>
                         <td>Trenzas pegadas</td>
                         <td>Diseños de trenzas pegadas adaptados al estilo solicitado.</td>
                     </tr>
+
                 </tbody>
+
             </table>
+
         </section>
 
         <!-- Esta section permite que los clientes se comuniquen con el salón -->
         <section id="contacto">
+
             <h2>Contáctanos</h2>
 
             <p>
@@ -189,6 +208,7 @@
             </p>
 
             <form>
+
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -205,11 +225,14 @@
                 <textarea id="mensaje" name="mensaje"></textarea>
 
                 <button type="submit">Enviar consulta</button>
+
             </form>
+
         </section>
 
-        <!-- Esta section contiene un recurso externo relacionado con estándares web -->
+        <!-- Esta section contiene un enlace externo y un enlace interno de ancla -->
         <section>
+
             <h2>Información adicional</h2>
 
             <p>
@@ -223,17 +246,20 @@
             <p>
                 <a href="#inicio">Volver al inicio</a>
             </p>
+
         </section>
 
     </main>
 
-    <!-- El footer contiene la información de contacto general del negocio -->
+    <!-- El footer contiene los datos generales de contacto del negocio -->
     <footer>
+
         <p>© 2026 DUAFE - Salón de Belleza</p>
+
         <p>Contacto: 3137640342</p>
+
     </footer>
 
 </body>
 
 </html>
-```
