@@ -74,8 +74,8 @@ nav a:hover {
     background-color: var(--morado-oscuro);
 }
 
-/* Contenedor principal centrado */
-main {
+/* Clase que centra y limita el contenido principal */
+.contenido-principal {
     width: 90%;
     max-width: 1080px;
     margin: 30px auto;
@@ -231,7 +231,7 @@ footer {
         font-size: 28px;
     }
 
-    main {
+    .contenido-principal {
         width: 94%;
     }
 
