@@ -1,190 +1,240 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página web</title>
+    <title>DUAFE | Salón de Belleza</title>
 
-    <!-- Hoja de estilos externa -->
-    <link rel="stylesheet" href="style.css">
+    <!-- La hoja externa permite separar la estructura HTML del diseño visual -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-    <!-- Encabezado principal -->
+    <!-- El header identifica el negocio y presenta su navegación principal -->
     <header>
-        <h1>KELSSEY TIFANNY CARDENAS QUEJADA</h1>
-        <p>Mi primera página web</p>
+        <img src="img/logo-duafe.png" alt="Logo del salón de belleza DUAFE">
 
-        <!-- Menú de navegación -->
+        <h1>DUAFE</h1>
+
+        <p>Salón de belleza y cuidado del cabello</p>
+
+        <!-- El nav contiene los enlaces principales para recorrer la página -->
         <nav>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#expectativas">Expectativas</a>
-            <a href="#habilidades">Habilidades</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
+    <!-- Main reúne el contenido principal del salón en una sola área -->
     <main>
 
-        <!-- Primera sección -->
-        <section id="sobre-mi" class="presentacion">
-
-            <div class="foto">
-                <figure>
-                    <img src="foto.jpg.jpeg" alt="Foto de Kelssey">
-                    <figcaption>Una fotografía de Kelssey</figcaption>
-                </figure>
-            </div>
-
-            <div class="informacion">
-                <h2>Sobre mí</h2>
-
-                <p>
-                    Mi nombre es Kelssey Tifanny Cardenas Quejada.
-                    Soy estudiante y actualmente estoy aprendiendo sobre
-                    desarrollo web y diseño de páginas.
-                </p>
-
-                <p>
-                    Me interesa conocer cómo se construyen los sitios web
-                    y cómo mejorar la experiencia de los usuarios.
-                </p>
-
-                <p>
-                    Considero importante aprender a crear páginas claras,
-                    organizadas y fáciles de utilizar.
-                </p>
-            </div>
-
-        </section>
-
-        <!-- Segunda sección -->
-        <section id="expectativas">
-            <h2>Mis expectativas del curso</h2>
+        <!-- Esta section presenta el salón y sirve como introducción -->
+        <section id="inicio">
+            <h2>Bienvenidas a DUAFE</h2>
 
             <p>
-                En este curso espero aprender a utilizar HTML y comprender
-                mejor cómo se estructura una página web.
+                En <strong>DUAFE</strong> nos dedicamos al cuidado y embellecimiento
+                del cabello, ofreciendo diferentes estilos para que cada persona
+                pueda expresar su personalidad.
             </p>
 
             <p>
-                También quiero aprender sobre diseño web moderno,
-                adaptación a diferentes dispositivos y buenas prácticas
-                para crear páginas organizadas.
+                Nuestro salón ofrece servicios de peinados, trenzas con kanekalon,
+                trenzas pegadas y montura de extensiones, realizados con dedicación
+                y atención a cada detalle.
             </p>
 
-            <article>
-                <h3>Lo que quiero aprender</h3>
-
-                <p>
-                    Quiero fortalecer mis conocimientos en HTML y CSS
-                    para poder desarrollar páginas web funcionales.
-                    <strong>La práctica es importante</strong> para mejorar
-                    mis habilidades.
-                </p>
-
-                <p>
-                    También quiero aprender a crear diseños
-                    <em>claros y fáciles de utilizar</em>.
-                </p>
-            </article>
+            <figure>
+                <img src="img/salon-duafe.jpg"
+                    alt="Espacio del salón de belleza DUAFE">
+                <figcaption>Espacio de atención del salón de belleza DUAFE.</figcaption>
+            </figure>
         </section>
 
-        <!-- Tercera sección -->
-        <section id="habilidades">
-            <h2>Mis habilidades</h2>
+        <!-- Esta section agrupa los servicios que ofrece el negocio -->
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
 
-            <h3>Temas que estoy aprendiendo</h3>
+            <p>
+                En DUAFE contamos con diferentes opciones de peinados y estilos
+                para ocasiones especiales o para renovar tu imagen.
+            </p>
 
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Diseño web</li>
-                <li>Diseño responsivo</li>
+                <li>Peinados</li>
+                <li>Trenzas con kanekalon</li>
+                <li>Montura de extensiones</li>
+                <li>Trenzas pegadas</li>
             </ul>
 
-            <h3>Pasos para crear una página web</h3>
+            <!-- Este article describe un servicio que puede entenderse por sí mismo -->
+            <article>
+                <h3>Trenzas con kanekalon</h3>
 
-            <ol>
-                <li>Crear la estructura HTML.</li>
-                <li>Agregar el contenido.</li>
-                <li>Aplicar estilos con CSS.</li>
-                <li>Revisar el diseño en diferentes dispositivos.</li>
-            </ol>
+                <p>
+                    Las trenzas con kanekalon permiten crear diferentes estilos,
+                    combinando creatividad y cuidado del cabello. Son una opción
+                    versátil para quienes buscan un cambio de imagen.
+                </p>
+
+                <p>
+                    En DUAFE trabajamos diferentes diseños de trenzas buscando
+                    que cada cliente encuentre un estilo que se adapte a sus gustos.
+                </p>
+            </article>
+
+            <figure>
+                <img src="img/trenzas-kanekalon.jpg"
+                    alt="Trenzas con kanekalon realizadas en DUAFE">
+                <figcaption>Trenzas con kanekalon.</figcaption>
+            </figure>
         </section>
 
-        <!-- Información adicional -->
-        <aside>
-            <h2>Dato adicional</h2>
+        <!-- Esta section explica el propósito del salón y su servicio -->
+        <section id="nosotros">
+            <h2>Sobre DUAFE</h2>
+
             <p>
-                Actualmente estoy aprendiendo sobre desarrollo web
-                y espero seguir mejorando mis conocimientos.
+                DUAFE es un salón de belleza dedicado especialmente al cuidado,
+                arreglo y transformación del cabello mediante diferentes técnicas
+                de peinado.
+            </p>
+
+            <p>
+                Nuestro propósito es ofrecer un espacio donde cada cliente pueda
+                encontrar un estilo que le haga sentir cómoda, segura y
+                <em>especial</em>.
+            </p>
+
+            <h3>Pasos para elegir tu estilo</h3>
+
+            <ol>
+                <li>Elegir el tipo de peinado o servicio.</li>
+                <li>Seleccionar el estilo que deseas realizar.</li>
+                <li>Consultar la disponibilidad del salón.</li>
+                <li>Agendar tu cita.</li>
+            </ol>
+
+            <figure>
+                <img src="img/peinado-duafe.jpg"
+                    alt="Peinado realizado en el salón de belleza DUAFE">
+                <figcaption>Uno de los estilos de peinado realizados en DUAFE.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Esta sección presenta información secundaria relacionada con el salón -->
+        <aside>
+            <h2>Información del salón</h2>
+
+            <p>
+                Para conocer los horarios disponibles, precios y disponibilidad
+                de cada servicio, puedes comunicarte directamente con DUAFE.
+            </p>
+
+            <p>
+                <strong>Atención:</strong> los servicios se realizan mediante
+                disponibilidad y programación previa.
             </p>
         </aside>
 
-        <!-- Tabla -->
-        <section>
-            <h2>Temas del curso</h2>
+        <!-- Esta section contiene datos organizados sobre los servicios -->
+        <section id="precios">
+            <h2>Servicios de DUAFE</h2>
 
             <table>
-                <caption>Temas que estoy aprendiendo</caption>
+                <caption>Servicios disponibles en el salón</caption>
 
                 <thead>
                     <tr>
-                        <th>Tema</th>
+                        <th>Servicio</th>
                         <th>Descripción</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>HTML</td>
-                        <td>Estructura de páginas web</td>
+                        <td>Peinados</td>
+                        <td>Diseños de peinados para diferentes ocasiones.</td>
                     </tr>
 
                     <tr>
-                        <td>CSS</td>
-                        <td>Diseño y estilos</td>
+                        <td>Trenzas con kanekalon</td>
+                        <td>Trenzas realizadas con extensiones de kanekalon.</td>
                     </tr>
 
                     <tr>
-                        <td>Responsive</td>
-                        <td>Adaptación a diferentes dispositivos</td>
+                        <td>Montura de extensiones</td>
+                        <td>Colocación de extensiones para cambiar o complementar el estilo.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Trenzas pegadas</td>
+                        <td>Diseños de trenzas pegadas adaptados al estilo solicitado.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-       <!-- Formulario -->
-<section id="contacto">
-    <h2>Contáctame</h2>
+        <!-- Esta section permite que los clientes se comuniquen con el salón -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
 
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+            <p>
+                Si deseas información sobre nuestros servicios o quieres
+                consultar disponibilidad, puedes escribirnos mediante este formulario.
+            </p>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje"></textarea>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
 
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+                <label for="servicio">Servicio de interés:</label>
+                <input type="text" id="servicio" name="servicio">
 
-</main>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
 
-<!-- Pie de página -->
-<footer>
-    <p>© 2026 Kelssey Tifanny Cardenas Quejada</p>
-    <p>Contacto: kelsseytifannycardenasquejada@gmail.com</p>
-</footer>
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+
+        <!-- Esta section contiene un recurso externo relacionado con estándares web -->
+        <section>
+            <h2>Información adicional</h2>
+
+            <p>
+                Para conocer más sobre buenas prácticas y estándares de la web,
+                puedes visitar el sitio oficial de
+                <a href="https://www.w3.org/" target="_blank" rel="noopener">
+                    W3C
+                </a>.
+            </p>
+
+            <p>
+                <a href="#inicio">Volver al inicio</a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- El footer contiene la información de contacto general del negocio -->
+    <footer>
+        <p>© 2026 DUAFE - Salón de Belleza</p>
+        <p>Contacto: 3137640342</p>
+    </footer>
 
 </body>
+
 </html>
+```
