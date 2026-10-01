@@ -18,31 +18,12 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 32px;
 }
 
-.menu {
-    background-color: #f8a5c2;
-    padding: 15px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu a {
-    display: block;
-    text-decoration: none;
-    color: #7a1745;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
+header p {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 main {
@@ -51,33 +32,39 @@ main {
     margin: 30px auto;
 }
 
-.contenedor {
+.presentacion {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.tarjeta {
+    align-items: center;
+    gap: 40px;
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    border: 2px solid #f8a5c2;
-    flex: 1 1 100%;
-}
-
-.tarjeta h2 {
-    color: #d6336c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #d9a3b5;
 }
 
 .foto {
+    flex: 1;
     text-align: center;
 }
 
 .foto img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+.informacion {
+    flex: 2;
+}
+
+.informacion h2 {
+    color: #d6336c;
+    margin-top: 0;
+}
+
+.informacion p {
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 footer {
@@ -88,35 +75,18 @@ footer {
     margin-top: 30px;
 }
 
-/* En tablet, el menú pasa a estar en fila y las tarjetas ocupan dos columnas */
-@media (min-width: 768px) {
+@media (max-width: 700px) {
 
-    .menu ul {
-        flex-direction: row;
-        justify-content: center;
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .menu li {
-        flex: 1;
-    }
-
-    .tarjeta {
-        flex: 1 1 calc(50% - 20px);
+    .informacion h2 {
+        margin-top: 20px;
     }
 
     header h1 {
-        font-size: 34px;
-    }
-}
-
-/* En computador, las tarjetas ocupan tres columnas y el contenido tiene más espacio */
-@media (min-width: 1024px) {
-
-    .tarjeta {
-        flex: 1 1 calc(33.33% - 20px);
-    }
-
-    header h1 {
-        font-size: 40px;
+        font-size: 24px;
     }
 }
