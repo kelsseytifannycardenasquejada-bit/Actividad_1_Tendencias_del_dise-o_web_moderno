@@ -7,6 +7,7 @@
     --fondo: #faf7ff;
     --blanco: #ffffff;
     --texto: #302238;
+    --superficie: #ffffff;
 }
 
 /* Todos los elementos calculan sus tamaños incluyendo padding y border */
@@ -84,7 +85,7 @@ nav a:hover {
 /* Tarjetas principales de contenido */
 section,
 aside {
-    background-color: var(--blanco);
+    background-color: var(--superficie);
     padding: 30px;
     margin-bottom: 30px;
     border: 1px solid var(--morado-claro);
@@ -255,7 +256,7 @@ footer {
 
     :root {
         --fondo: #1c1722;
-        --blanco: #2b2433;
+        --superficie: #2b2433;
         --texto: #f4edf8;
         --morado-claro: #513c61;
     }
@@ -267,7 +268,7 @@ footer {
 
     section,
     aside {
-        background-color: var(--blanco);
+        background-color: var(--superficie);
     }
 
     input,
