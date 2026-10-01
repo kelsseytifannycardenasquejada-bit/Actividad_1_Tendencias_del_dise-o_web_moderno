@@ -1,0 +1,278 @@
+/* Paleta y estilos principales del salón DUAFE */
+
+:root {
+    --morado-principal: #7b2cbf;
+    --morado-oscuro: #4a148c;
+    --morado-claro: #eadcff;
+    --fondo: #faf7ff;
+    --blanco: #ffffff;
+    --texto: #302238;
+}
+
+/* Todos los elementos calculan sus tamaños incluyendo padding y border */
+* {
+    box-sizing: border-box;
+}
+
+/* Configuración general de la página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+/* Encabezado principal de DUAFE */
+header {
+    background-color: var(--morado-principal);
+    color: var(--blanco);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Logo del salón */
+header img {
+    width: 130px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Nombre del negocio */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Descripción debajo del nombre */
+header p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* Menú principal organizado con Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+/* Cambio visual al pasar el cursor */
+nav a:hover {
+    background-color: var(--morado-oscuro);
+}
+
+/* Contenedor principal centrado */
+main {
+    width: 90%;
+    max-width: 1080px;
+    margin: 30px auto;
+}
+
+/* Tarjetas principales de contenido */
+section,
+aside {
+    background-color: var(--blanco);
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--morado-claro);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(74, 20, 140, 0.12);
+}
+
+/* Encabezados de las secciones */
+section h2,
+aside h2 {
+    color: var(--morado-oscuro);
+    margin-top: 0;
+}
+
+/* Subencabezados */
+section h3 {
+    color: var(--morado-principal);
+}
+
+/* Imágenes: nunca deben desbordar su contenedor */
+img {
+    max-width: 100%;
+}
+
+/* Imágenes de las secciones */
+figure {
+    margin: 25px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 3px solid var(--morado-claro);
+}
+
+figcaption {
+    margin-top: 8px;
+    color: var(--morado-oscuro);
+    font-size: 14px;
+}
+
+/* Artículos independientes */
+article {
+    margin-top: 25px;
+    padding: 20px;
+    border-left: 5px solid var(--morado-principal);
+    background-color: var(--morado-claro);
+    border-radius: 8px;
+}
+
+/* Listas */
+ul,
+ol {
+    padding-left: 25px;
+}
+
+/* Tabla de servicios */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    color: var(--morado-oscuro);
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid var(--morado-principal);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--morado-principal);
+    color: var(--blanco);
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9b4dc;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Botón del formulario */
+button {
+    background-color: var(--morado-principal);
+    color: var(--blanco);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+button:hover {
+    background-color: var(--morado-oscuro);
+}
+
+/* Enlaces dentro del contenido */
+a {
+    color: var(--morado-principal);
+}
+
+a:hover {
+    color: var(--morado-oscuro);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--morado-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section,
+    aside {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Modo oscuro: modifica las variables de fondo y texto */
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --fondo: #1c1722;
+        --blanco: #2b2433;
+        --texto: #f4edf8;
+        --morado-claro: #513c61;
+    }
+
+    body {
+        background-color: var(--fondo);
+        color: var(--texto);
+    }
+
+    section,
+    aside {
+        background-color: var(--blanco);
+    }
+
+    input,
+    textarea {
+        background-color: #3a3042;
+        color: var(--texto);
+    }
+}
