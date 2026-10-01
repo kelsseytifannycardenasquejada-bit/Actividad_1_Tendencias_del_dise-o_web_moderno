@@ -6,53 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página web</title>
 
+    <!-- Hoja de estilos externa -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Encabezado principal -->
     <header>
         <h1>KELSSEY TIFANNY CARDENAS QUEJADA</h1>
         <p>Mi primera página web</p>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#expectativas">Expectativas</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
     <main>
 
-        <section class="presentacion">
+        <!-- Primera sección -->
+        <section id="sobre-mi" class="presentacion">
 
             <div class="foto">
-                <img src="foto.jpg.jpeg" alt="Foto de Kelssey">
+                <figure>
+                    <img src="foto.jpg.jpeg" alt="Foto de Kelssey">
+                    <figcaption>Una fotografía de Kelssey</figcaption>
+                </figure>
             </div>
 
             <div class="informacion">
                 <h2>Sobre mí</h2>
 
                 <p>
-                    Soy estudiante de Ingeniería de Sistemas y actualmente
-                    estoy aprendiendo sobre desarrollo de software y diseño
-                    de páginas web. Me interesa conocer cómo se construyen
-                    los sitios web y cómo mejorar la experiencia de los usuarios.
+                    Mi nombre es Kelssey Tifanny Cardenas Quejada.
+                    Soy estudiante y actualmente estoy aprendiendo sobre
+                    desarrollo web y diseño de páginas.
                 </p>
 
-                <h2>Mis expectativas del curso</h2>
+                <p>
+                    Me interesa conocer cómo se construyen los sitios web
+                    y cómo mejorar la experiencia de los usuarios.
+                </p>
 
                 <p>
-                    En este curso espero aprender a utilizar HTML y comprender
-                    mejor cómo se estructura una página web. También quiero
-                    aprender sobre diseño web moderno, adaptación a diferentes
-                    dispositivos y buenas prácticas para crear páginas claras,
-                    organizadas y fáciles de usar.
+                    Considero importante aprender a crear páginas claras,
+                    organizadas y fáciles de utilizar.
                 </p>
             </div>
 
         </section>
 
+        <!-- Segunda sección -->
+        <section id="expectativas">
+            <h2>Mis expectativas del curso</h2>
+
+            <p>
+                En este curso espero aprender a utilizar HTML y comprender
+                mejor cómo se estructura una página web.
+            </p>
+
+            <p>
+                También quiero aprender sobre diseño web moderno,
+                adaptación a diferentes dispositivos y buenas prácticas
+                para crear páginas organizadas.
+            </p>
+
+            <article>
+                <h3>Lo que quiero aprender</h3>
+
+                <p>
+                    Quiero fortalecer mis conocimientos en HTML y CSS
+                    para poder desarrollar páginas web funcionales.
+                    <strong>La práctica es importante</strong> para mejorar
+                    mis habilidades.
+                </p>
+
+                <p>
+                    También quiero aprender a crear diseños
+                    <em>claros y fáciles de utilizar</em>.
+                </p>
+            </article>
+        </section>
+
+        <!-- Tercera sección -->
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+
+            <h3>Temas que estoy aprendiendo</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Diseño web</li>
+                <li>Diseño responsivo</li>
+            </ul>
+
+            <h3>Pasos para crear una página web</h3>
+
+            <ol>
+                <li>Crear la estructura HTML.</li>
+                <li>Agregar el contenido.</li>
+                <li>Aplicar estilos con CSS.</li>
+                <li>Revisar el diseño en diferentes dispositivos.</li>
+            </ol>
+        </section>
+
+        <!-- Información adicional -->
+        <aside>
+            <h2>Dato adicional</h2>
+            <p>
+                Actualmente estoy aprendiendo sobre desarrollo web
+                y espero seguir mejorando mis conocimientos.
+            </p>
+        </aside>
+
+        <!-- Tabla -->
+        <section>
+            <h2>Temas del curso</h2>
+
+            <table>
+                <caption>Temas que estoy aprendiendo</caption>
+
+                <thead>
+                    <tr>
+                        <th>Tema</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estructura de páginas web</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Diseño y estilos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Responsive</td>
+                        <td>Adaptación a diferentes dispositivos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulario -->
+        <section>
+            <h2>Contáctame</h2>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo">
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Enlaces -->
+        <section>
+            <h2>Enlaces</h2>
+
+            <p>
+                Puedes visitar
+                <a href="https://www.w3.org/" target="_blank" rel="noopener">
+                    W3C
+                </a>
+                para conocer más sobre los estándares web.
+            </p>
+
+            <p>
+                <a href="#sobre-mi">Volver a la sección Sobre mí</a>
+            </p>
+        </section>
+
     </main>
 
-    <footer>
+    <!-- Pie de página -->
+    <footer id="contacto">
         <p>© 2026 Kelssey Tifanny Cardenas Quejada</p>
+        <p>Contacto: kelssey@example.com</p>
     </footer>
 
 </body>
-
 </html>
