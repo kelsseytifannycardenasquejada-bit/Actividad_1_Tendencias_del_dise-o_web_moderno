@@ -1,0 +1,123 @@
+</< CSS
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #333;
+}
+
+header {
+    background-color: #e75480;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.menu {
+    background-color: #f8a5c2;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #7a1745;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #f8a5c2;
+    flex: 1 1 100%;
+}
+
+.tarjeta h2 {
+    color: #d6336c;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 12px;
+}
+
+footer {
+    background-color: #e75480;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* En tablet, el menú pasa a estar en fila y las tarjetas ocupan dos columnas */
+@media (min-width: 768px) {
+
+    .menu ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .menu li {
+        flex: 1;
+    }
+
+    .tarjeta {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+}
+
+/* En computador, las tarjetas ocupan tres columnas y el contenido tiene más espacio */
+@media (min-width: 1024px) {
+
+    .tarjeta {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+}
